@@ -6,12 +6,14 @@ const https = require('https');
 const fs = require('fs');
 const app = express()
 const { swaggerSpecs, swaggerUI } = require('./apiDocument'); //ชื่อ file ต้องตรงกัน
+const cookieParser = require("cookie-parser");
 
 app.use(express.json());
 app.use(cors({
     origin: true,
     credentials: true
 }));
+app.use(cookieParser());
 app.use('/api/v1', apiRouter)
 app.use('/api/v2', apiv2Router)
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerSpecs));

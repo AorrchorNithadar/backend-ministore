@@ -1,0 +1,2 @@
+ทุกครั้งที่ Update database >> terminal : 	npx prisma db pull 
+					npx prisma generate client
