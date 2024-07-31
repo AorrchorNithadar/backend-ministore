@@ -1,2 +1,24 @@
+SOFTWARE ที่ใช้สำหรับการพัฒนา
+- NodeJS. https://nodejs.org/en
+- Prisma ORM. - จะติดตั้งไว้ภายใน Project หลังจากสร้าง Node Project เรียบร้อยแล้ว
+(รายละเอียดเพิ่มเติมที่ https://www.prisma.io/docs/orm/overview/introduction)
+- NodeMon. : npm install -g nodemon
+- VS-Code - install a Prisma extension
+- MySQL Database : https://dev.mysql.com/downloads/mysql/
+- Postman
+
+Node Server and Rest API
+Terminal >> 
+- สร้าง Node Project : npm init -y
+- ติดตั้ง Prisma ORM : npm install @prisma/client prisma
+- ติดตั้ง express : npm install express
+- ติดตั้ง CORS : npm install cors
+
+สร้างไฟล์ schema.prisma
+Terminal >> 
+- prisma db pull
+- prisma generate
+
+DATABASE
 ทุกครั้งที่ Update database >> terminal : 	npx prisma db pull 
 					npx prisma generate client
